@@ -16,7 +16,7 @@ import json #this solution saves and opens json files. You may use a different f
 # PROJECT 03 MODIFICATIONS
 # ADD NOTE_ID, AUTHOR, AND SNIPPET FIELDS TO NoteForm
 
-class NoteForm(tk.Toplevel):
+class NoteForm(tk.Toplevel): 
     
     def __init__(self, master, notebook, notes): # initialize the new object
         super().__init__(master) # initialize it as a toplevel window
