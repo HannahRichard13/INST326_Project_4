@@ -1,3 +1,4 @@
+# PROJECT 4 IMPROVEMENT # 1
 # MakeNote module
 # imports
 import tkinter as tk
@@ -20,7 +21,9 @@ class NoteForm(tk.Toplevel):
     def __init__(self, master, notebook, notes): # initialize the new object
         super().__init__(master) # initialize it as a toplevel window
         # set the new window's default parameters
-        self.geometry("600x700") 
+        # PROJECT 4 IMPROVEMENT # 2
+        # - improve overall display (made window larger)
+        self.geometry("900x600") 
         self.title('New Note')
         
         # create a frame in the new window that covers the entire window
