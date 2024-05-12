@@ -1,0 +1,175 @@
+Content Folder for Hannah Richard
+
+Located in this folder is my 10 python Notes
+
+
+Note 1:
+
+
+Title: 
+Saving Files in Python
+Text:
+In python, there is 3 types of files you can save. These files include text files, csv files, and json files. To save a text file, you need to open a file with the “w” argument so you can write in the file. Then you need to user the “f.write” method to write in the content you want to go in the file. To read this file, we need to open the same file that we just added text to using the “r” argument. Then we need to use the “.readlines” method to read each line. We then save these lines to a list and iterate through the list. Each iteration we need to strip part of it and then take the content and add it to a dictionary or list. Or we can print the contents. To save a csv file, first we need to import the CSV module. Then, we need to open the file and use the “w” argument to write in code. We then use the “csv.DictWriter” method and use the correct arguments. Then we use the “writeheader()” method to organize the dictionary. Lastly, we iterate through notes, and write in head writerow from list we iterate through. To read in the csv file, we need to open the csv file, but this time using the “r” argument so that we read the file and to write it. Then we need to use the “DictReader” method on the csv file. This will go through the rows of the csv file and then we can add the content in each row to a list, or print it out. To save a json file, we need to first import the JSON module. Then, once we have imported the module, we need to open the file we want and use the “w” argument. Then we use the json.dump() method which writes in all the content to the file. To read a JSON file, we need to open the JSON file and then load all the content that is in the file using json.load() method. We can store all of this load content into a list or other variable.
+Link:
+https://www.geeksforgeeks.org/saving-text-json-and-csv-to-a-file-in-python/
+Tag:
+ #savingfilesiscool
+Author: 
+Hannah Richard
+
+
+Note 2:
+
+Title:
+Types of Data in Python
+Text:
+In python, there are several data types you may encounter and need to use when programming. These data types include text, number, sequences, mapping, sets, Booleans, and none. Text data types come in the form of strings. Numeric data types come in the form of integers, floats, and complex. Sequence types come in the form of lists, tuples, and range. Mapping types come in the form od dictionaries. Set types come in the form of set or frozenset. Boolean types come in the form of bool. Lastly, none types come in the form of NoneType.
+Link:
+https://www.w3schools.com/python/python_datatypes.asp
+Tag:
+ #datatypes
+Author:
+Hannah Richard
+
+Note 3:
+
+Title:
+Functions in Python
+Text:
+When you are coding and you are noticing that part of your code is constantly being repeated, this is a sign that you could need to use a function to simplify your code. Functions in python can be run whenever you call the function, and you can pass data through them in the form of parameters. To create a function, you use the word “def” followed by the name of your function and parenthesis. Then you use a colon and start writing your lines of code indented beneath the line you have just written. Functions can be made for anything, and they are fun to make.
+Link:
+https://www.w3schools.com/python/python_functions.asp
+Tag:
+ #def
+Author: Hannah Richard
+
+Note 4:
+
+Title:
+Obtain Metadata
+Text/ Code Snippet:
+In order to obtain metadata, first you must import the following modules:
+Then you will use that module for the following code:
+This will leave you with the variable meta, that created a string of the date and time something was created.
+Link:
+https://docs.python.org/3/library/datetime.html Links to an external site.
+Tags:
+#meta # data
+Snippet:
+import datetime
+created = datetime.datetime.now()
+local_now = created.astimezone() # shows the local time and the GMT offset
+local_tz = local_now.tzinfo
+meta = f'created {created}, {local_tz}'
+Author:
+Hannah Richard
+
+Note 5:
+
+Title: 
+Submit Method, creating a dictionary
+Text:
+In this code, it describes the portion of the submit method that saved all the important note data into variables.
+The note data is then stored as a dictionary and it is appended to self.notes.
+Link:
+https://www.w3schools.com/python/python_dictionaries.asp Links to an external site.
+Tags:
+#dictionary #submitbutton
+Snippet:
+{'title':self.title, 'text':self.text, 'link':self.link, 'tags':self.tags, 'note_id':self.note_id, 'author':self.author, 'snippet':self.snippet, 'meta':self.meta}
+Author:
+Hannah Richard
+
+Note 6:
+    
+Title: 
+Methods in Python
+Text: 
+When you are coding and you are noticing that part of your code is constantly being repeated, 
+this is a sign that you could need to use a method to simplify your code. 
+Methods in python can be run whenever you call the methods, and you can pass data through them from the class in the form of objects. 
+The code snippet below showshow to start a method
+Link: https://www.w3schools.com/python/python_functions.asp
+Tag: #def #method
+Snippet:
+def open_notebook():
+ #code in your open_notebook method goes here
+Author:
+Hannah Richard
+
+Note 7:
+
+Title:
+Create DataFrame Using Pandas
+Text:
+Dataframes are data structures that hold 2 dimensional data and are similar to software in SQL and excel.
+Link:
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html Links to an external site.
+Tags: 
+#DataFrame #Pandas #Data
+Snippet:
+import pandas as pd
+data = {'Jackson' : [1, 1, 3, 4, 1],  'James' : [2, 2, 1, 3, 4], 'Johnny' : [3, 3, 3, 3, 1]}
+df = pd.DataFrame(data)
+df.head()
+Author:
+Hannah Richard
+
+Note 8:
+
+Title: Writing a JSON File
+Text: 
+JSON is on of three ways you can save a file.
+It utilizes the dump function to load all the content onto a file.
+Links:
+https://www.boardinfinity.com/blog/json-file-in-python/#:~:text=JSON%20can%20also%20be%20written,file%20in%20the%20JSON%20format. Links to an external site.
+Tags:
+#dump #JSON #file #currentdirectory
+Snippet:
+with open(f"{first_note.note_title}.json", 'w') as filename:
+json.dump(note_dict, filename)
+self.notes = [] 
+Author:
+Hannah Richard
+
+Note 9:
+
+Title:
+Creating a Class
+Text:
+Classes are crucial for object oriented programming in python.
+Classes have a set of attributes relared to them.
+These attributes are unique to the specific class instance that is created.
+This instance is called an object.
+Links:
+No link
+Tags:
+#class
+Snippet:
+class MainWindow(tk.Tk):
+def__init__(self)
+super__init__() 
+self.geometry("1200x900") # set the default window size
+self.title('Notebook') #set the default window title
+self.notebook = [] # initialize an attribute named 'notebook' as an empty list
+self.notes = [] # list of note objects
+self.note = {}
+Author:
+Hannah Richard
+
+Note 10:
+
+Title:
+Import a Module
+Text:
+To make your program code more simple, you can utilize importing a module.
+This will cause there to be less lines of code in your original file.
+It will also organize the sections of your code better.
+Links:
+https://docs.python.org/3/tutorial/modules.html
+Tags:
+#module
+Snippet:
+import noteform_module
+Author:
+Hannah Richard

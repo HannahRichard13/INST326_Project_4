@@ -1,5 +1,7 @@
 # PROJECT 4 IMPROVEMENT # 1
+# create my own Module
 # MakeNote module
+
 # imports
 import tkinter as tk
 from tkinter import ttk
@@ -23,13 +25,13 @@ class NoteForm(tk.Toplevel):
         # set the new window's default parameters
         # PROJECT 4 IMPROVEMENT # 2
         # - improve overall display (made window larger)
-        self.geometry("900x600") 
-        self.title('New Note')
+        self.geometry("900x600") # change window size
+        self.title('New Note') # add a title to note window
         
         # create a frame in the new window that covers the entire window
-        self.frame_main = tk.Frame(self)
-        self.frame_main.pack(fill=tk.BOTH, expand=True)
-        self.frame_main.config(bg='light gray')
+        self.frame_main = tk.Frame(self) # create frame
+        self.frame_main.pack(fill=tk.BOTH, expand=True) # add frame to window
+        self.frame_main.config(bg='light gray') # set background to gray
 
         #PROJECT 03 EDIT
         # moved the definition of self.notebook above the default note
