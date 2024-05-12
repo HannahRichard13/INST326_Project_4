@@ -9,8 +9,15 @@ Project Description:
 
 **** The file paths in this code located in the open_notebook, save_notebook, and submit_edit methods may need to be changed depending on the computer this program is being run on.
 
+*** This program uses a mdoule called noteform_module that must be in the same working directory as this code when it is being run
+
 This program allows the user to create notes and save them to a notebook. 
-It also allows the user to edit their previous notes and tracks the users edits
+It also allows the user to edit their previous notes and tracks the users edit history.
+
+The three improvements made to this note program:
+ - the creation of my own module called noteform_module
+ - improved overall display and aesthetics, including the addition of a scroll bar
+ - the addition of a note counter
 
 To create a new note, hit the new note button and enter your note data.
 To save this note to your computer, hit the save notebook button and it will allow you to save your note to your computer.
@@ -24,6 +31,6 @@ Once you close all the tabs except for the Main Window, you can reopen the noteb
 Once you reopen the notebook by hitting the notebook button, it will show you your orignal notes as well as the edited notes with their timestamp.
 
 Other files:
-In the Content_folder, it holds a combination of all group members notes and code snippets.
+In the Content_folder, it holds a combination of my 10 notes/snippets.
 
 
